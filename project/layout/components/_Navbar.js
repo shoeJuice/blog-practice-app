@@ -14,6 +14,7 @@ function Navbar() {
         boxShadow="base"
         color='gray.600'
         justifyContent='space-between'
+        backgroundColor='white'
         padding={5}
         zIndex={6}
         position='relative'
@@ -28,7 +29,7 @@ function Navbar() {
             <NextLink href={'/projects'} passHref>
                 <Link>Projects</Link>
             </NextLink>
-            <NextLink href={'/'} passHref>
+            <NextLink href={'/blogs'} passHref>
                 <Link>Blog</Link>
             </NextLink>
             <NextLink href={'/'} passHref>
