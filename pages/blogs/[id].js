@@ -1,6 +1,6 @@
 import supabase from "../../utils/supabase";
 import BlogPreview from '../../modules/blogs/components/_blogPreview';
-
+import Head from 'next/head'
 
 export async function getServerSideProps({params}){
     const {data: post, error} = await supabase
@@ -28,8 +28,11 @@ export async function getServerSideProps({params}){
 
 export default function PostPage({post}){
     return(
-        
+        <>
+        <Head>
+            <title>{post.title}</title>
+        </Head>
         <BlogPreview title={post.title} timestamp={post.created_at} body={post.content} />
-
+        </>
     )
 }

@@ -25,10 +25,7 @@ function index({posts}) {
         
         <BlogPreviews>
            { posts.map((id, key) => {
-                if(key < posts.length - 1)
-                return(<BlogPreview key={key} href={`/blogs/${id.id}`} marginRight={2} title={id.title} timestamp={id.created_at} body={id.content} needLink />)
-                else 
-                return <BlogPreview key={key} href={`/blogs/${id.id}`} title={id.title} timestamp={id.created_at} body={id.content} needLink /> 
+                return <BlogPreview key={key} href={`/blogs/${id.id}`} marginX='8ex' title={id.title} timestamp={id.created_at} body={id.content} needLink /> 
             })
             }
         </BlogPreviews>

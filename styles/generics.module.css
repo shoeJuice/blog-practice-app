@@ -1,4 +1,6 @@
 .pageBackground{
     background-color: aliceblue;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
   }
+

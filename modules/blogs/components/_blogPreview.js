@@ -3,12 +3,18 @@ import React from 'react'
 import {Box, Text, Flex, VStack, Link, Button} from '@chakra-ui/react'
 import NextLink from 'next/link'
 
+/**
+ * A blog preview component which shows title, content alongside a button redirecting to its post page.
+ * @param {*} props 
+ * 
+ */
+
 function blogPreview(props) {
   return (
     <Flex
         boxShadow="base"
         padding={3}
-        width='640px'
+        width='85%'
         borderRadius={6}
         marginX='auto'
         marginTop={4}

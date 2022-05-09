@@ -12,6 +12,7 @@ function PageSetup(props) {
         height='100vh'
         width='100vw'
         flexDirection='column'
+        overflow='hidden'
     >
         <Navbar />
         {props.children}
