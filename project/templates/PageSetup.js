@@ -3,6 +3,7 @@ import React from 'react'
 import {Flex} from '@chakra-ui/react'
 import Navbar from '../layout/components/_Navbar'
 
+
 /**
  * Template for page modeling
  */

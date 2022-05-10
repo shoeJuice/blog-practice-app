@@ -24,14 +24,13 @@ function BlogPreviews(props) {
             marginTop={2}
             padding={2}
             borderTopRadius={8}
-            width='30%'
+            width='45%'
+            justifyContent='space-between'
+
         >
-            <HStack> 
                 <Button variant='outline'>Test</Button>
                 <Button variant='outline'>Test</Button>
-                <Button variant='outline'>Test</Button>
-            </HStack>
-            
+                <Button variant='outline'>Test</Button> 
         </Flex>
             <Flex
                 borderTopRightRadius={8}

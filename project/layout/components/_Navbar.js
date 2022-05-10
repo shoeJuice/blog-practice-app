@@ -19,7 +19,9 @@ function Navbar() {
         zIndex={6}
         position='relative'
     >
-        <Text>Logo Goes Here</Text>
+        <NextLink href={'/'} passHref>
+            <Link>Logo Goes Here</Link>
+        </NextLink>
         <HStack
             spacing={10}
         >
@@ -32,7 +34,7 @@ function Navbar() {
             <NextLink href={'/blogs'} passHref>
                 <Link>Blog</Link>
             </NextLink>
-            <NextLink href={'/'} passHref>
+            <NextLink href={'/contact'} passHref>
                 <Link>Contact</Link>
             </NextLink>
         </HStack>
