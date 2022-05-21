@@ -2,11 +2,18 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/generics.module.css'
 
+import React from 'react'
 import {Box, Text, Flex, Link} from '@chakra-ui/react'
 
-
+import supabase from '../utils/supabase'
 
 export default function Home() {
+
+  const user = supabase.auth.user()
+  const [userInfo, setUser] = React.useState();
+
+  React.useEffect(() => {console.log(user)}, [])
+
   return (
     <div className={styles.pageBackground}>
       <Head>
@@ -16,7 +23,10 @@ export default function Home() {
       </Head>
 
       
-
+    <p>User is:</p>
+    <a href="/admin/auth">Login</a>
+    <a href="/admin/logout">Log Off</a>
+    
 
       
     </div>

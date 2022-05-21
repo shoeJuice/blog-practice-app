@@ -1,7 +1,8 @@
 import React from 'react'
 
-import {Flex} from '@chakra-ui/react'
+import {Fade, Flex, Slide, SlideFade} from '@chakra-ui/react'
 import Navbar from '../layout/components/_Navbar'
+import {motion} from 'framer-motion'
 
 
 /**
@@ -16,7 +17,16 @@ function PageSetup(props) {
         overflow='hidden'
     >
         <Navbar />
-        {props.children}
+        <motion.div initial="loadInitial" animate="loadAnimate" key={props.routeKey} variants={{
+          loadInitial:{
+            opacity: 0
+          },
+          loadAnimate:{
+            opacity: 1
+          },
+        }}>
+          {props.children}
+        </motion.div>
     </Flex>
   )
 }

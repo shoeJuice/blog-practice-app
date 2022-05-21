@@ -11,7 +11,7 @@ function BlogPreviews(props) {
         width='50%'
         margin='auto'
         height='65%'
-        marginTop={6}
+        paddingY={4}
     >
         <Text
             fontWeight={"bold"}
@@ -44,6 +44,7 @@ function BlogPreviews(props) {
                 overflowY='auto'
                 overflowX='hidden'
                 justifyContent='space-between'
+                alignItems='center'
                 boxShadow='base'
             >
                 
